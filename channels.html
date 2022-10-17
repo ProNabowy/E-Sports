@@ -1,0 +1,238 @@
+li
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/noramliz.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <link rel="icon" href="images/outer.png" type="image/x-icon">
+        <title>E-Sports-channels</title>
+    </head>
+
+    <body class="bg-black">
+        <div class="position-fixed active-icone"
+            style="transition: 0.5s; left: 20px; top: 10px; font-size: 25px; color: white; z-index: 110;">
+            <i class="fa-solid fa-bars" style="cursor: pointer;"></i>
+        </div>
+        <nav class="active position-fixed text-white"
+            style="transition: 0.5s; left: -300px;  top: 0; visibility: hidden; opacity: 0; transform: scale(0); z-index: 100;  width: 200px; height: 100vh; background-color: #111214;  box-shadow: -2px -3px 4px 4px #333; ">
+            <div class="d-flex align-items-center">
+                <img src="./images/page-logo.PNG" alt="page-logo">
+                <h2 class="fw-bold ms-2" style="font-size: 15px;">EStreaming</h2>
+            </div>
+            <ul class="mt-5 p-3 pe-0 fw-bolder">
+                <li class="mb-3"><a href="index.html" class="text-white focus-in-contract-bck">
+                        <i class="fa-solid fa-house me-3"></i> HOME
+                    </a></li>
+                <li class="mb-3""><a href=" categories.html" style="color:white;">
+                    <i class="fa-solid fa-trophy me-3"></i> Categories
+                    </a>
+                </li>
+                <li class="mb-3"><a href="match.html" class="text-white">
+                        <i class="fa-solid fa-flag-checkered me-3"></i> MATCHES
+                    </a></li>
+                <li class="mb-3"><a href="ranks.html" class="text-white">
+                        <i class="fa-solid fa-khanda me-3"></i> RANKS
+                    </a></li>
+                <li class="mb-3" style="border-right: 2px solid #f4782e;"><a href="channels.html"
+                        style="color: #f4782e;">
+                        <i class="fa-solid fa-snowflake me-3"></i>Channels
+                    </a></li>
+                <li class="mb-3"><a href="blog.html" style="color:white;">
+                        <i class="fa-solid fa-sd-card me-3"></i>BLOG
+                    </a></li>
+                <li class="mb-3"><a href="join.html" class="text-white">
+                        <i class="fa-solid fa-rocket me-3"></i>JOIN
+                    </a></li>
+            </ul>
+        </nav>
+        <header class="pt-3 pe-b position-relative text-white" style="z-index: 10;">
+            <div class="container">
+                <div class="wrapper d-flex justify-content-between align-items-center flex-lg-row flex-column">
+                    <form action="" class=" mb-3 mb-lg-0 d-flex justify-content-center align-items-center">
+                        <div class="inp position-relative">
+                            <input type="text" class=" p-2 fw-bolder"
+                                style="width: 300px; border-radius: 10px; border: none; outline: none;
+                                                                        box-shadow: 0px 0px 6px 3px #333; background-color:#101113; caret-color: white; color: white; font-size: 13px;"
+                                placeholder="Search For Any Game">
+                            <i class="fa-solid fa-magnifying-glass position-absolute "></i>
+                        </div>
+                        <div class="icone ms-3">
+                            <i class="fa-solid fa-bell me-2 fs-5"></i>
+                            <i class="fa-solid fa-message fs-5"></i>
+                        </div>
+                    </form>
+                    <div class="title d-flex justify-content-between align-items-center">
+                        <div class="text me-4 d-flex justify-content-center align-items-center">
+                            <p class="me-3 fw-bolder">DOTA2 IS <span
+                                    style="color:#da3458; font-weight: bolder;">LIVE</span>
+                            </p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="image d-flex justify-content-between align-items-center">
+                            <img src="images/Elipse 15.png" class="me-2"
+                                style="width: 50px; height: 50px; border-radius: 50%;" alt="Logo Page">
+                            <p class="fw-bolder me-2">Mahmoud I-Nabowy</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="layout"></div>
+        <section class="position-absolute landing p-3"
+            style="left: 0; top:0; color: white;  width: 100%;min-height: 40%; background-image: url(images/bg.png); background-size: cover; background-position: center center;">
+            <div class="container">
+                <div class=" d-flex justify-content-center align-items-center flex-column"
+                    style=" width: 100%; z-index: 10; position: absolute; left: 50%; top: 50%; transform: translate(-50% , -50%);">
+                    <h1 class="fw-bolder mb-2 text-white">Our <span style="color:#f4782e;">Channels</span></h1>
+                    <p class="mb-3 text-white"> <i class="fa-solid fa-house"></i> Home / <span
+                            style="color: #f4782e;">Channels</span>
+                    </p>
+                    <div style="width: 15px; height:15px; border-radius: 50%; background-color: #f4782e;"></div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <section class="pt-4 pb-4 text-white">
+            <div class="container wrapper-loop">
+                <div class="row mb-4">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="position-relative random-bg"
+                            style="border-radius: 15px 15px  0 0 ; min-height: 200px; background-image: url(images/steup.png); background-size: cover; background-position: center center;">
+                            <i class="fa-regular fa-bell position-absolute fs-5"
+                                style="padding: 5px 10px !important; right: 10px; top: 5px; background-color: #f4782e;"></i>
+                        </div>
+                        <div class="card-chann position-relative d-flex align-items-center p-1 pb-4"
+                            style="border-radius: 0 0 15px 15px ; background-color: #393939;">
+                            <div class="position-relative" style="top: -40px; left:20px;">
+                                <div class="d-flex justify-content-center align-items-center"
+                                    style="width: 60px; height: 60px; border-radius: 50%;">
+                                    <img src="images/Ellipse 10.png" alt="herorr img" style=" width: 50px; max-width: 50px; z-index: 1;">
+                                </div>
+                                <p
+                                    style=" width: fit-content; position: relative; z-index: 11; font-size: 10px; margin-top: -10px !important; margin-left: 5px; color: white; padding: 2px 10px; font-weight: bolder; background-color: #da3458; border-radius: 5px;">
+                                    Live Now</p>
+                            </div>
+                            <div class="text-white position-relative ms-3" style=" z-index: 11;">
+                                <h3 class="mb-2" style="font-size: 15px; font-weight: bolder; text-align: center;">Compo
+                                    Reaper
+                                </h3>
+                                <button class="m-btn" style="width: 75px; padding: 5px !important;">Page</button>
+                                <button class="m-btn active"
+                                    style="width: 75px; padding: 5px !important; border: 1px solid #f4782e; background-color: transparent;">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="position-relative random-bg"
+                            style="border-radius: 15px 15px  0 0 ; min-height: 200px; background-image: url(images/steup.png); background-size: cover; background-position: center center;">
+                            <i class="fa-regular fa-bell position-absolute fs-5"
+                                style="padding: 5px 10px !important; right: 10px; top: 5px; background-color: #f4782e;"></i>
+                        </div>
+                        <div class="card-chann position-relative d-flex align-items-center p-1 pb-4"
+                            style="border-radius: 0 0 15px 15px ; background-color: #393939;">
+                            <div class="position-relative" style="top: -40px; left:20px;">
+                                <div class="d-flex justify-content-center align-items-center"
+                                    style="width: 60px; height: 60px; border-radius: 50%;">
+                                    <img src="images/Ellipse 10.png" alt="herorr img"
+                                        style="max-width: 100%;  z-index: 1;">
+                                </div>
+                                <p
+                                    style=" width: fit-content; position: relative; z-index: 11; font-size: 10px; margin-top: -10px !important; margin-left: 5px; color: white; padding: 2px 10px; font-weight: bolder; background-color: #da3458; border-radius: 5px;">
+                                    Live Now</p>
+                            </div>
+                            <div class="text-white position-relative ms-3" style=" z-index: 11;">
+                                <h3 class="mb-2" style="font-size: 15px; font-weight: bolder; text-align: center;">Compo
+                                    Reaper
+                                </h3>
+                                <button class="m-btn" style="width: 75px; padding: 5px !important;">Page</button>
+                                <button class="m-btn active"
+                                    style="width: 75px; padding: 5px !important; border: 1px solid #f4782e; background-color: transparent;">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="position-relative random-bg"
+                            style="border-radius: 15px 15px  0 0 ; min-height: 200px; background-image: url(images/steup.png); background-size: cover; background-position: center center;">
+                            <i class="fa-regular fa-bell position-absolute fs-5"
+                                style="padding: 5px 10px !important; right: 10px; top: 5px; background-color: #f4782e;"></i>
+                        </div>
+                        <div class="card-chann position-relative d-flex align-items-center p-1 pb-4"
+                            style="border-radius: 0 0 15px 15px ; background-color: #393939;">
+                            <div class="position-relative" style="top: -40px; left:20px;">
+                                <div class="d-flex justify-content-center align-items-center"
+                                    style="width: 60px; height: 60px; border-radius: 50%;">
+                                    <img src="images/Ellipse 10.png" alt="herorr img" style="max-width: 100%;  z-index: 1;">
+                                </div>
+                                <p
+                                    style=" width: fit-content; position: relative; z-index: 11; font-size: 10px; margin-top: -10px !important; margin-left: 5px; color: white; padding: 2px 10px; font-weight: bolder; background-color: #da3458; border-radius: 5px;">
+                                    Live Now</p>
+                            </div>
+                            <div class="text-white position-relative ms-3" style=" z-index: 11;">
+                                <h3 class="mb-2" style="font-size: 15px; font-weight: bolder; text-align: center;">Compo
+                                    Reaper
+                                </h3>
+                                <button class="m-btn" style="width: 75px; padding: 5px !important;">Page</button>
+                                <button class="m-btn active"
+                                    style="width: 75px; padding: 5px !important; border: 1px solid #f4782e; background-color: transparent;">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="position-relative random-bg"
+                            style="border-radius: 15px 15px  0 0 ; min-height: 200px; background-image: url(images/steup.png); background-size: cover; background-position: center center;">
+                            <i class="fa-regular fa-bell position-absolute fs-5"
+                                style="padding: 5px 10px !important; right: 10px; top: 5px; background-color: #f4782e;"></i>
+                        </div>
+                        <div class="card-chann position-relative d-flex align-items-center p-1 pb-4"
+                            style="border-radius: 0 0 15px 15px ; background-color: #393939;">
+                            <div class="position-relative" style="top: -40px; left:20px;">
+                                <div class="d-flex justify-content-center align-items-center"
+                                    style="width: 60px; height: 60px; border-radius: 50%;">
+                                    <img src="images/Ellipse 10.png" alt="herorr img" style="max-width: 100%;  z-index: 1;">
+                                </div>
+                                <p
+                                    style=" width: fit-content; position: relative; z-index: 11; font-size: 10px; margin-top: -10px !important; margin-left: 5px; color: white; padding: 2px 10px; font-weight: bolder; background-color: #da3458; border-radius: 5px;">
+                                    Live Now</p>
+                            </div>
+                            <div class="text-white position-relative ms-3" style=" z-index: 11;">
+                                <h3 class="mb-2" style="font-size: 15px; font-weight: bolder; text-align: center;">Compo
+                                    Reaper
+                                </h3>
+                                <button class="m-btn" style="width: 75px; padding: 5px !important;">Page</button>
+                                <button class="m-btn active"
+                                    style="width: 75px; padding: 5px !important; border: 1px solid #f4782e; background-color: transparent;">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-black p-3 text-center position-relative text-white fw-bolder"
+            style="box-shadow: 10px 10px 10px 10px #777;">
+            <p style="position: relative; z-index: 11;">&copy; <span class="year"></span> copyright <span
+                    style="color: #f4782e;">ProNabowy</span> all right reserved</p>
+        </footer>
+
+        <script src="js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>

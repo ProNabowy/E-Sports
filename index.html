@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/noramliz.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <link rel="icon" href="images/outer.png" type="image/x-icon">
+        <title>E-Sports</title>
+    </head>
+
+    <body class="bg-black">
+        <div class="position-fixed active-icone"
+            style="transition: 0.5s; left: 20px; top: 10px; font-size: 25px; color: white; z-index: 110;">
+            <i class="fa-solid fa-bars" style="cursor: pointer;"></i>
+        </div>
+        <nav class="active position-fixed text-white"
+            style="transition: 0.5s; left: -300px;  top: 0; visibility: hidden; opacity: 0; transform: scale(0); z-index: 100;  width: 200px; height: 100vh; background-color: #111214;  box-shadow: -2px -3px 4px 4px #333; ">
+            <div class="d-flex align-items-center">
+                <img src="./images/page-logo.PNG" alt="page-logo">
+                <h2 class="fw-bold ms-2" style="font-size: 15px;">EStreaming</h2>
+            </div>
+            <ul class="mt-5 p-3 pe-0 fw-bolder">
+                <li class="mb-3" style="border-right: 2px solid #f4782e;"><a href="#" class="focus-in-contract-bck"
+                        style="color:#f4782e;">
+                        <i class="fa-solid fa-house me-3"></i> HOME
+                    </a></li>
+                <li class="mb-3"><a href="categories.html" style="color:white;">
+                        <i class="fa-solid fa-trophy me-3"></i> Categories
+                    </a></li>
+                <li class="mb-3"><a href="match.html" class="text-white">
+                        <i class="fa-solid fa-flag-checkered me-3"></i> MATCHES
+                    </a></li>
+                <li class="mb-3"><a href="ranks.html" class="text-white">
+                        <i class="fa-solid fa-khanda me-3"></i> RANKS
+                    </a></li>
+                <li class="mb-3"><a href="channels.html" class="text-white">
+                        <i class="fa-solid fa-snowflake me-3"></i>Channels
+                    </a></li>
+                <li class="mb-3"><a href="blog.html" class="text-white">
+                        <i class="fa-solid fa-sd-card me-3"></i>BLOG
+                    </a></li>
+                <li class="mb-3"><a href="join.html" class="text-white">
+                        <i class="fa-solid fa-rocket me-3"></i>JOIN
+                    </a></li>
+            </ul>
+        </nav>
+        <header class="pt-3 pe-b position-relative text-white" style="z-index: 10;">
+            <div class="container">
+                <div class="wrapper d-flex justify-content-between align-items-center flex-lg-row flex-column">
+                    <form action="" class=" mb-3 mb-lg-0 d-flex justify-content-center align-items-center">
+                        <div class="inp position-relative">
+                            <input type="text" class=" p-2 fw-bolder"
+                                style="width: 300px; border-radius: 10px; border: none; outline: none;
+                                    box-shadow: 0px 0px 6px 3px #333; background-color:#101113; caret-color: white; color: white; font-size: 13px;"
+                                placeholder="Search For Any Game">
+                            <i class="fa-solid fa-magnifying-glass position-absolute "></i>
+                        </div>
+                        <div class="icone ms-3">
+                            <i class="fa-solid fa-bell me-2 fs-5"></i>
+                            <i class="fa-solid fa-message fs-5"></i>
+                        </div>
+                    </form>
+                    <div class="title d-flex justify-content-between align-items-center">
+                        <div class="text me-4 d-flex justify-content-center align-items-center">
+                            <p class="me-3 fw-bolder">DOTA2 IS <span
+                                    style="color:#da3458; font-weight: bolder;">LIVE</span>
+                            </p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="image d-flex justify-content-between align-items-center">
+                            <img src="images/Elipse 15.png" class="me-2"
+                                style="width: 50px; height: 50px; border-radius: 50%;" alt="Logo Page">
+                            <p class="fw-bolder me-2">Mahmoud I-Nabowy</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="layout"></div>
+        <section class="position-absolute landing p-3"
+            style="left: 0; top:0; color: white;  width: 100%; background-image: url(images/Rectangle\ 308.png); background-size: cover; background-position: center center;">
+            <div class="container">
+                <div class="wrapper d-flex justify-content-between align-items-center flex-lg-row flex-column position-relative"
+                    style="z-index: 11 ;">
+                    <div class="build w-50">
+                        <div>
+                            <h1 class="fw-bolder mb-3 " style=" width: 60%; font-size: 40px;">Build Your Team Get Your
+                                Stearm</h1>
+                            <div class="d-flex justify-content-between align-items-center" style="width: 50%;">
+                                <button class="m-btn me-2">Get Stearm</button>
+                                <div class="on-play">
+                                    <div>
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Swiper -->
+                        <div class="swiper m-3 ms-0 mySwiper "
+                            style="border-left: 3px solid #f4782e; border-right: 3px solid #f4782e; height: 100px;">
+                            <div class="swiper-wrapper">
+                                <div
+                                    class="swiper-slide bg-transparent text-black d-flex justify-content-between align-items-center">
+                                    <div class="box position-relative d-flex justify-content-center align-items-center"
+                                        style="width: calc(96% / 3); height: 100%; background-image: url(./images/swiper-one.png); background-size: cover; background-position: center center; border: 1px solid #f4782e;">
+                                        <div class="on-play">
+                                            <div>
+                                                <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box position-relative d-flex justify-content-center align-items-center"
+                                        style="width: calc(96% / 3); height: 100%; background-image: url(./images/swiper-two.png); background-size: cover; background-position: center center; border: 1px solid #f4782e;">
+                                        <div class="on-play">
+                                            <div>
+                                                <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box position-relative d-flex justify-content-center align-items-center"
+                                        style="width: calc(96% / 3); height: 100%; background-image: url(./images/swiper-three.png); background-size: cover; background-position: center center; border: 1px solid #f4782e;">
+                                        <div class="on-play">
+                                            <div>
+                                                <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="swiper-slide bg-transparent text-black d-flex justify-content-between align-items-center">
+                                    <div class="box position-relative d-flex justify-content-center align-items-center"
+                                        style="width: calc(96% / 3); height: 100%; background-image: url(./images/swiper-four.png); background-size: cover; background-position: center center; border: 1px solid #f4782e;">
+                                        <div class="on-play">
+                                            <div>
+                                                <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box position-relative d-flex justify-content-center align-items-center"
+                                        style="width: calc(96% / 3); height: 100%; background-image: url(./images/swiper-five.png); background-size: cover; background-position: center center; border: 1px solid #f4782e;">
+                                        <div class="on-play">
+                                            <div>
+                                                <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box position-relative d-flex justify-content-center align-items-center"
+                                        style="width: calc(96% / 3); height: 100%; background-image: url(./images/swiper-six.png); background-size: cover; background-position: center center; border: 1px solid #f4782e;">
+                                        <div class="on-play">
+                                            <div>
+                                                <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next d-flex justify-content-center align-items-center"
+                                style="top: 50%; transform: translateY(-50%); color: white; background-color: #f4782e; border-radius: 50%; width: 30px; height: 30px;">
+                            </div>
+                            <div class="swiper-button-prev d-flex justify-content-center align-items-center"
+                                style="top: 50%; transform: translateY(-50%); color: white; background-color: #f4782e; border-radius: 50%; width: 30px; height: 30px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle d-flex justify-content-between flex-lg-row flex-column"
+                        style="width: 45%; height: 273px">
+                        <div>
+                            <h4 class="mb-2" style="font-weight: 600;"><span style="color: #606e31;">USA</span>, Sports
+                            </h4>
+                            <h4 style="color: #f4782e; font-weight: 600;">600 Matches</h4>
+                        </div>
+                        <div>
+                            <img src="images/outer.png" alt="outer space" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="p-4 bg-black games">
+            <div class="container">
+                <div class="d-flex justify-content-between flex-wrap align-items-center ">
+                    <div class=" vip-card position-relative p-4 pb-0 "
+                        style="width: 65%; background-color: #111214; border-radius: 20px;">
+                        <p
+                            style="font-size: 13px; color: white; padding: 2px 20px; font-weight: bolder; position: absolute; left: 20%; top: -20px; transform: translate(-20% , 10px); background-color: #f4782e;">
+                            VIP USERS</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="image">
+                                <img src="images/body.png" alt="body img" style="width: 300px;">
+                            </div>
+                            <div>
+                                <p class="text-white fs-6 fw-bolder mb-2">Virsual Reality</p>
+                                <h2 style="color: #f4782e; font-weight: bolder; margin-bottom: 20px !important; ">We
+                                    Give all World
+                                    all fun and fantastic</h2>
+                                <h3 style="max-width: 40%; color: white; font-weight: bold;">Go And Get Your Vr Fast
+                                </h3>
+                                <div
+                                    class="d-flex justify-content-lg-start justify-content-center align-items-center m-3">
+                                    <button class="m-btn">View it</button>
+                                    <div class="on-play ms-3">
+                                        <div>
+                                            <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #393939; color: white; width: 32%; border-radius: 20px;"
+                        class="card-score position-relative p-2 mb-3">
+                        <h2 class="mb-2"
+                            style=" position: relative; z-index: 10; font-size: 15px; font-weight: bold; text-align: center;">
+                            Data 2 <span style="color: #f4782e;">Match</span></h2>
+                        <div class=" d-flex justify-content-center align-items-center">
+                            <p class="d-flex justify-content-center align-items-center me-3"
+                                style=" position: relative; z-index: 10; width: 25px; height:25px; border-radius: 50%; border: 1px solid #f4782e;">
+                                5</p>
+                            <p
+                                style="position: relative; z-index: 10;width: 30px; height:2px; background-color: white; ">
+                            </p>
+                            <p class="d-flex justify-content-center align-items-center ms-3"
+                                style="position: relative; z-index: 10; width: 25px; height:25px; border-radius: 50%; border: 1px solid #f4782e;">
+                                3</p>
+                        </div>
+                        <p
+                            style=" position: relative; z-index: 10; font-size: 15px; font-weight: bold; text-align: center; letter-spacing: 2px;">
+                            1:15:00
+                        </p>
+                        <div class=" mb-5 d-flex justify-content-evenly text-center align-items-center"
+                            style="position: relative; z-index: 10;">
+                            <div style="color: white; width: 100px;">
+                                <img src="images/red gaming.png" alt="gaming img" width="60px" height="60px">
+                                <p style="font-weight: bolder; letter-spacing: 1px;" class="m-1">Vikono</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p style="font-size: 11px;"><span style="color: #f4782e;">500</span> followers</p>
+                                    <p style="font-size: 11px;"><i style="color: yellow;" class="fa-solid fa-star"></i>
+                                        4.5</p>
+                                </div>
+                            </div>
+                            <img src="./images/saif.PNG" alt="sword img" width="100px">
+                            <div style="color: white; width: 100px;">
+                                <img src="images/Elipse 12.png" alt="gaming img" width="60px" height="60px">
+                                <p style="font-weight: bolder; letter-spacing: 1px;" class="m-1">Skeltono</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p style="font-size: 11px;"><span style="color: #f4782e;">700</span> followers</p>
+                                    <p style="font-size: 11px;"><i style="color: yellow;" class="fa-solid fa-star"></i>
+                                        4.8</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper m-2 bg-black p-2 "
+                            style="position: relative; z-index: 10; border-radius: 10px;">
+                            <div class="d-flex justify-content-around align-items-center">
+                                <div class="d-flex justify-content-btween align-items-center"
+                                    style=" border: 1px solid #f4782e; border-radius: 10px;">
+                                    <p class="ms-2" style="font-size: 8px; font-weight: bolder;">3</p>
+                                    <p style="width: 40px; margin: 0 10px; height: 16px; background-color: #f4782e;">
+                                    </p>
+                                    <p class="me-2" style="font-size: 8px; font-weight: bolder;">2</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="images/red gaming.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <img src="images/saif.PNG" alt="sword img" width="30px" height="30px">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Elipse 12.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <p style="letter-spacing: 2px; font-size: 11px;">1:15:00</p>
+                            </div>
+                            <div class="d-flex justify-content-around align-items-center">
+                                <div class="d-flex justify-content-btween align-items-center"
+                                    style=" border: 1px solid #f4782e; border-radius: 10px;">
+                                    <p class="ms-2" style="font-size: 8px; font-weight: bolder;">5</p>
+                                    <p style="width: 40px; margin: 0 10px; height: 16px; background-color: #f4782e;">
+                                    </p>
+                                    <p class="me-2" style="font-size: 8px; font-weight: bolder;">4</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="images/red gaming.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <img src="images/saif.PNG" alt="sword img" width="30px" height="30px">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Elipse 12.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <p style="letter-spacing: 2px; font-size: 11px;">2:00:00</p>
+                            </div>
+                            <div class="d-flex justify-content-around align-items-center">
+                                <div class="d-flex justify-content-btween align-items-center"
+                                    style=" border: 1px solid #f4782e; border-radius: 10px;">
+                                    <p class="ms-2" style="font-size: 8px; font-weight: bolder;">3</p>
+                                    <p style="width: 40px; margin: 0 10px; height: 16px; background-color: #f4782e;">
+                                    </p>
+                                    <p class="me-2" style="font-size: 8px; font-weight: bolder;">1</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="images/red gaming.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <img src="images/saif.PNG" alt="sword img" width="30px" height="30px">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Elipse 12.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <p style="letter-spacing: 2px; font-size: 11px;">0:00:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap align-items-center ">
+                    <div style="background-color: #393939; color: white; width: 32%; border-radius: 20px;"
+                        class="card-score position-relative p-2">
+                        <h2 class="mb-2"
+                            style=" position: relative; z-index: 10; font-size: 15px; font-weight: bold; text-align: center;">
+                            Football <span style="color: #f4782e;">Match</span></h2>
+                        <div class=" d-flex justify-content-center align-items-center">
+                            <p class="d-flex justify-content-center align-items-center me-3"
+                                style=" position: relative; z-index: 10; width: 25px; height:25px; border-radius: 50%; border: 1px solid #f4782e;">
+                                5</p>
+                            <p
+                                style="position: relative; z-index: 10;width: 30px; height:2px; background-color: white; ">
+                            </p>
+                            <p class="d-flex justify-content-center align-items-center ms-3"
+                                style="position: relative; z-index: 10; width: 25px; height:25px; border-radius: 50%; border: 1px solid #f4782e;">
+                                3</p>
+                        </div>
+                        <p
+                            style=" position: relative; z-index: 10; font-size: 15px; font-weight: bold; text-align: center; letter-spacing: 2px;">
+                            1:15:00
+                        </p>
+                        <div class="d-flex justify-content-evenly text-center align-items-center"
+                            style="position: relative; z-index: 10;">
+                            <div style="color: white; width: 100px;">
+                                <img src="images/Elipse 14.png" alt="gaming img" width="60px" height="60px">
+                                <p style="font-weight: bolder; letter-spacing: 1px;" class="m-1">Vikono</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p style="font-size: 11px;"><span style="color: #f4782e;">500</span> followers</p>
+                                    <p style="font-size: 11px;"><i style="color: yellow;" class="fa-solid fa-star"></i>
+                                        4.5</p>
+                                </div>
+                            </div>
+                            <img src="./images/saif.PNG" alt="sword img" width="100px">
+                            <div style="color: white; width: 100px;">
+                                <img src="images/Elipse 13.png" alt="gaming img" width="60px" height="60px">
+                                <p style="font-weight: bolder; letter-spacing: 1px;" class="m-1">Skeltono</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p style="font-size: 11px;"><span style="color: #f4782e;">700</span> followers</p>
+                                    <p style="font-size: 11px;"><i style="color: yellow;" class="fa-solid fa-star"></i>
+                                        4.8</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper m-2 bg-black p-2 "
+                            style="position: relative; z-index: 10; border-radius: 10px;">
+                            <div class="d-flex justify-content-around align-items-center">
+                                <div class="d-flex justify-content-btween align-items-center"
+                                    style=" border: 1px solid #f4782e; border-radius: 10px;">
+                                    <p class="ms-2" style="font-size: 8px; font-weight: bolder;">3</p>
+                                    <p style="width: 40px; margin: 0 10px; height: 16px; background-color: #f4782e;">
+                                    </p>
+                                    <p class="me-2" style="font-size: 8px; font-weight: bolder;">2</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="images/red gaming.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <img src="images/saif.PNG" alt="sword img" width="30px" height="30px">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Elipse 12.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <p style="letter-spacing: 2px; font-size: 11px;">1:15:00</p>
+                            </div>
+                            <div class="d-flex justify-content-around align-items-center">
+                                <div class="d-flex justify-content-btween align-items-center"
+                                    style=" border: 1px solid #f4782e; border-radius: 10px;">
+                                    <p class="ms-2" style="font-size: 8px; font-weight: bolder;">5</p>
+                                    <p style="width: 40px; margin: 0 10px; height: 16px; background-color: #f4782e;">
+                                    </p>
+                                    <p class="me-2" style="font-size: 8px; font-weight: bolder;">4</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="images/red gaming.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <img src="images/saif.PNG" alt="sword img" width="30px" height="30px">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Elipse 12.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <p style="letter-spacing: 2px; font-size: 11px;">2:00:00</p>
+                            </div>
+                            <div class="d-flex justify-content-around align-items-center">
+                                <div class="d-flex justify-content-btween align-items-center"
+                                    style=" border: 1px solid #f4782e; border-radius: 10px;">
+                                    <p class="ms-2" style="font-size: 8px; font-weight: bolder;">3</p>
+                                    <p style="width: 40px; margin: 0 10px; height: 16px; background-color: #f4782e;">
+                                    </p>
+                                    <p class="me-2" style="font-size: 8px; font-weight: bolder;">1</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="images/red gaming.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <img src="images/saif.PNG" alt="sword img" width="30px" height="30px">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Elipse 12.png" alt="gaming img" width="20px" height="20px">
+                                    <p class="ms-2 fw-bold" style="font-size: 11px;">Vikono</p>
+                                </div>
+                                <p style="letter-spacing: 2px; font-size: 11px;">0:00:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vip-card mt-4 position-relative pb-3 "
+                        style="width: 65%; background-color: #111214; border-radius: 10px; border: 3px solid #333; ">
+                        <p class="d-none d-lg-block"
+                            style="z-index: 10; font-size: 13px; color: white; padding: 2px 20px; font-weight: bolder; position: absolute; left: 20%; top: -20px; transform: translate(-20% , 10px); background-color: #f4782e; border-radius: 5px;">
+                            Live Now</p>
+                        <p class="d-none d-lg-block"
+                            style=" z-index: 10; font-size: 13px; color: white; padding: 2px 10px; font-weight: bolder; position: absolute; left: 35%; top: -20px; transform: translate(-35% , 10px); background-color: #da3458; border-radius: 5px;">
+                            ESports</p>
+                        <div class=" position-relative card-layout d-flex justify-content-end"
+                            style="height: 220px; background-image: url(images/bg-se.png); border-radius: 10px; background-size: cover; background-position: center center;">
+                            <div class="text-white d-flex justify-content-between align-items-center bg-black p-1 pe-3 ps-3"
+                                style="position: relative; z-index: 10; width: fit-content; height: fit-content;">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/red gaming.png" alt="gaming" width="25px" style="max-width: 25px;">
+                                    <p style="font-size: 11px; margin-left: 10px; font-weight: bold;">Vikono</p>
+                                </div>
+                                <img src="images/saif.PNG" alt="img" width="50px" style="max-width: 25px;">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Elipse 12.png" alt="gaming" width="25px" style="max-width: 25px;">
+                                    <p style="font-size: 11px; margin-left: 10px; font-weight: bold;">Skeltono</p>
+                                </div>
+                            </div>
+                            <div class="on-play"
+                                style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+                                <div>
+                                    <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-lg-between justify-content-center align-items-center">
+                            <div class="d-flex align-items-center d-none d-lg-flex">
+                                <div class="position-relative">
+                                    <div class="d-flex justify-content-center align-items-center"
+                                        style="width: 60px; height: 60px; border-radius: 50%;">
+                                        <img src="images/Ellipse 10.png" alt="Ellipse img" style="max-width: 100%;">
+                                    </div>
+                                    <p
+                                        style=" position: relative; z-index: 11; font-size: 10px; margin-top: -10px !important; margin-left: 5px; color: white; padding: 2px 10px; font-weight: bolder; background-color: #da3458; border-radius: 5px;">
+                                        Live Now</p>
+
+                                </div>
+                                <div class="text-white ms-3">
+                                    <h3 style="font-size: 13px; font-weight: bolder; text-align: center;">Compo Reaper
+                                    </h3>
+                                    <button class="m-btn" style="width: 75px; padding: 0 !important;">View</button>
+                                    <button class="m-btn active"
+                                        style="width: 75px; padding: 0 !important; border: 1px solid #f4782e; background-color: transparent;">Follow</button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between p-2">
+                                <div class="me-2">
+                                    <p class="text-white mb-2" style="font-size: 11px;"><i
+                                            class="me-2 fa-solid fa-flag-checkered"></i> Dota2 Match</p>
+                                    <p style="color: #f4782e; font-size: 11px;"><i class="me-2 fa-regular fa-gem"></i>
+                                        Vote Team</p>
+                                </div>
+                                <div class="ms-2">
+                                    <p class="text-white mb-2" style="font-size: 11px;"><i
+                                            class="me-2 fa-regular fa-clock"></i>1:15: 00</p>
+                                    <p style="color: #da3458; font-size: 11px;"><i class="me-2 fa-solid fa-heart"></i>
+                                        Love Video</p>
+                                </div>
+                                <div class="ms-2">
+                                    <p class="text-white mb-2" style="font-size: 11px;"><i
+                                            class="me-2 fa-solid fa-eye"></i>2k seen</p>
+                                    <p style="color: white; font-size: 11px;"><i
+                                            class="me-2 fa-solid fa-share-nodes"></i>
+                                        Shere Now</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-cards p-2 mt-4">
+                    <h3 class="d-flex justify-content-between align-items-center text-white fw-bolder"
+                        style="width: 200px;">
+                        <div class="brand"></div>
+                        Matches
+                    </h3>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-3">
+                        <div class="card-game me-0 position-relative p-0  mt-3 mb-3" style="width: calc(95% / 4);">
+                            <div class="position-relative">
+                                <div class="buttons">
+                                    <p class="d-none d-lg-block"
+                                        style="z-index: 10; font-size: 11px; color: white; padding: 2px 10px; font-weight: bolder; position: absolute; left: 20%; top: -20px; transform: translate(-20% , 10px); background-color: #f4782e; border-radius: 5px;">
+                                        Live Now</p>
+                                    <p class="d-none d-lg-block"
+                                        style="z-index: 10; font-size: 11px; color: white; padding: 2px 10px; font-weight: bolder; position: absolute; left: 43%; top: -20px; transform: translate(-20% , 10px); background-color: #da3458; border-radius: 5px;">
+                                        ESports</p>
+                                </div>
+                                <div
+                                    style="min-height: 200px; padding: 10px !important; position: relative; background-image: url(images/swiper-one.png); background-size: cover; background-position: center;">
+                                    <div class="d-flex justify-content-end position-relative" style="z-index:11;">
+                                        <div class="text text-white text-center">
+                                            <h4 style="font-size: 11px; font-weight: bold;">Online Game</h4>
+                                            <p style="font-size: 11px; font-weight: bold;">
+                                                <i class="fa-solid fa-khanda"></i>
+                                                5 - 2 For Fox
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="on-play position-absolute"
+                                        style="left: 50%; top:50%; transform: translate(-50% , -50%);">
+                                        <div>
+                                            <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-white  text-uppercase fw-bolder"
+                                        style="font-size: 13px; position: absolute; z-index: 11; bottom: 10px; left: 20px;">
+                                        Thunder
+                                        Of
+                                        War</p>
+
+                                </div>
+                            </div>
+                            <div class="p-3 d-flex justify-content-between align-items-center"
+                                style="border-radius: 0px 0px 12px 12px; background-color: #393939;">
+                                <div class="m-btn position-relative"
+                                    style="width: fit-content; z-index: 11; padding: 3px 10px !important; font-size: 11px;">
+                                    View Page</div>
+                                <div class="text-white position-relative" style="z-index: 11;">
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-bell"></i>
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-heart"></i>
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-game me-0 position-relative p-0  mt-3 mb-3" style="width: calc(95% / 4);">
+                            <div class="position-relative">
+                                <div class="buttons">
+                                    <p class="d-none d-lg-block"
+                                        style="z-index: 10; font-size: 11px; color: white; padding: 2px 10px; font-weight: bolder; position: absolute; left: 20%; top: -20px; transform: translate(-20% , 10px); background-color: #f4782e; border-radius: 5px;">
+                                        Live Now</p>
+                                    <p class="d-none d-lg-block"
+                                        style="z-index: 10; font-size: 11px; color: white; padding: 2px 10px; font-weight: bolder; position: absolute; left: 43%; top: -20px; transform: translate(-20% , 10px); background-color: #da3458; border-radius: 5px;">
+                                        ESports</p>
+                                </div>
+                                <div
+                                    style="min-height: 200px; padding: 10px !important; position: relative; background-image: url(images/swiper-six.png);  background-size: cover; background-position: center;">
+                                    <div class="d-flex justify-content-end position-relative" style="z-index:11;">
+                                        <div class="text text-white text-center">
+                                            <h4 style="font-size: 11px; font-weight: bold;">Online Game</h4>
+                                            <p style="font-size: 11px; font-weight: bold;">
+                                                <i class="fa-solid fa-khanda"></i>
+                                                5 - 2 For Fox
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="on-play position-absolute"
+                                        style="left: 50%; top:50%; transform: translate(-50% , -50%);">
+                                        <div>
+                                            <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-white  text-uppercase fw-bolder"
+                                        style="font-size: 13px; position: absolute; z-index: 11; bottom: 10px; left: 20px;">
+                                        Thunder
+                                        Of
+                                        War</p>
+
+                                </div>
+                            </div>
+                            <div class="p-3 d-flex justify-content-between align-items-center"
+                                style="border-radius: 0px 0px 12px 12px; background-color: #393939;">
+                                <div class="m-btn position-relative"
+                                    style="width: fit-content; z-index: 11; padding: 3px 10px !important; font-size: 11px;">
+                                    View Page</div>
+                                <div class="text-white position-relative" style="z-index: 11;">
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-bell"></i>
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-heart"></i>
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-game me-0 position-relative p-0  mt-3 mb-3" style="width: calc(95% / 4);">
+                            <div class="position-relative">
+                                <div class="buttons">
+                                    <p class="d-none d-lg-block"
+                                        style="z-index: 10; font-size: 11px; color: white; padding: 2px 10px; font-weight: bolder; position: absolute; left: 20%; top: -20px; transform: translate(-20% , 10px); background-color: #f4782e; border-radius: 5px;">
+                                        Live Now</p>
+                                    <p class="d-none d-lg-block"
+                                        style="z-index: 10; font-size: 11px; color: white; padding: 2px 10px; font-weight: bolder; position: absolute; left: 43%; top: -20px; transform: translate(-20% , 10px); background-color: #da3458; border-radius: 5px;">
+                                        ESports</p>
+                                </div>
+                                <div
+                                    style="min-height: 200px; padding: 10px !important; position: relative; background-image: url(images/swiper-seven.png);  background-size: cover; background-position: center;">
+                                    <div class="d-flex justify-content-end position-relative" style="z-index:11;">
+                                        <div class="text text-white text-center">
+                                            <h4 style="font-size: 11px; font-weight: bold;">Online Game</h4>
+                                            <p style="font-size: 11px; font-weight: bold;">
+                                                <i class="fa-solid fa-khanda"></i>
+                                                5 - 2 For Fox
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="on-play position-absolute"
+                                        style="left: 50%; top:50%; transform: translate(-50% , -50%);">
+                                        <div>
+                                            <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-white  text-uppercase fw-bolder"
+                                        style="font-size: 13px; position: absolute; z-index: 11; bottom: 10px; left: 20px;">
+                                        Thunder
+                                        Of
+                                        War</p>
+
+                                </div>
+                            </div>
+                            <div class="p-3 d-flex justify-content-between align-items-center"
+                                style="border-radius: 0px 0px 12px 12px; background-color: #393939;">
+                                <div class="m-btn position-relative"
+                                    style="width: fit-content; z-index: 11; padding: 3px 10px !important; font-size: 11px;">
+                                    View Page</div>
+                                <div class="text-white position-relative" style="z-index: 11;">
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-bell"></i>
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-heart"></i>
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-game me-0 position-relative p-0  mt-3 mb-3" style="width: calc(95% / 4);">
+                            <div class="position-relative">
+                                <div class="buttons">
+                                    <p class="d-none d-lg-block"
+                                        style="z-index: 10; font-size: 11px; color: white; padding: 2px 10px; font-weight: bolder; position: absolute; left: 20%; top: -20px; transform: translate(-20% , 10px); background-color: #f4782e; border-radius: 5px;">
+                                        Live Now</p>
+                                    <p class="d-none d-lg-block"
+                                        style="z-index: 10; font-size: 11px; color: white; padding: 2px 10px; font-weight: bolder; position: absolute; left: 43%; top: -20px; transform: translate(-20% , 10px); background-color: #da3458; border-radius: 5px;">
+                                        ESports</p>
+                                </div>
+                                <div
+                                    style="min-height: 200px; padding: 10px !important; position: relative; background-image: url(images/swiper-eight.png);  background-size: cover; background-position: center;">
+                                    <div class="d-flex justify-content-end position-relative" style="z-index:11;">
+                                        <div class="text text-white text-center">
+                                            <h4 style="font-size: 11px; font-weight: bold;">Online Game</h4>
+                                            <p style="font-size: 11px; font-weight: bold;">
+                                                <i class="fa-solid fa-khanda"></i>
+                                                5 - 2 For Fox
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="on-play position-absolute"
+                                        style="left: 50%; top:50%; transform: translate(-50% , -50%);">
+                                        <div>
+                                            <i class="fa-solid fa-play" style="color: #f4782e;"></i>
+                                        </div>
+                                    </div>
+                                    <p class="text-white  text-uppercase fw-bolder"
+                                        style="font-size: 13px; position: absolute; z-index: 11; bottom: 10px; left: 20px;">
+                                        Thunder
+                                        Of
+                                        War</p>
+
+                                </div>
+                            </div>
+                            <div class="p-3 d-flex justify-content-between align-items-center"
+                                style="border-radius: 0px 0px 12px 12px; background-color: #393939;">
+                                <div class="m-btn position-relative"
+                                    style="width: fit-content; z-index: 11; padding: 3px 10px !important; font-size: 11px;">
+                                    View Page</div>
+                                <div class="text-white position-relative" style="z-index: 11;">
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-bell"></i>
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-heart"></i>
+                                    <i style="font-size: 11px;" class="ms-2 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-blog">
+                    <h3 class="d-flex justify-content-between align-items-center text-white fw-bolder"
+                        style="width: 150px;">
+                        <div class="brand"></div>
+                        Blog
+                    </h3>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-3">
+                        <div class="card-blog me-0 position-relative p-0  mt-3 mb-3" style="width: calc(95% / 4);">
+                            <div>
+                                <img src="images/man.png" alt="img man" style="max-width: 100%;">
+                            </div>
+                            <div class="text-parent p-3 pt-2"
+                                style="background-color: #393939; border-radius: 0 0 20px 20px; ">
+                                <div class="d-flex  justify-content-between align-items-center text-white"
+                                    style="max-width: 80%;">
+                                    <p style="font-size: 12px; font-weight: bolder;"><i
+                                            class="me-1 fa-solid fa-user-check"></i> Team Admin</p>
+                                    <p style="font-size: 12px; font-weight: bolder;"><i
+                                            class="me-1 fa-solid fa-clock"></i> Jan 20,2019</p>
+                                </div>
+                                <p
+                                    style="color: #f4782e; margin: 15px 0 !important; font-size: 14px; font-weight: bolder;">
+                                    How to Grow Epiphytic Tropical Plants and Trees</p>
+                                <p style="font-size:11px ; color: white;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iste dolorem praesentium eum
+                                    provident cupiditate.
+                                    corporis distinctio sed. Id, praesentium aliquam.</p>
+                            </div>
+                        </div>
+                        <div class="card-blog me-0 position-relative p-0  mt-3 mb-3" style="width: calc(95% / 4);">
+                            <div>
+                                <img src="images/swiper-four.png" alt="img man" style="max-width: 100%;">
+                            </div>
+                            <div class="text-parent p-3 pt-2"
+                                style="background-color: #393939; border-radius: 0 0 20px 20px; ">
+                                <div class="d-flex  justify-content-between align-items-center text-white"
+                                    style="max-width: 80%;">
+                                    <p style="font-size: 12px; font-weight: bolder;"><i
+                                            class="me-1 fa-solid fa-user-check"></i> Team Admin</p>
+                                    <p style="font-size: 12px; font-weight: bolder;"><i
+                                            class="me-1 fa-solid fa-clock"></i> Jan 20,2019</p>
+                                </div>
+                                <p
+                                    style="color: #f4782e; margin: 15px 0 !important; font-size: 14px; font-weight: bolder;">
+                                    How to Grow
+                                    Epiphytic Tropical Plants and Trees</p>
+                                <p style="font-size:11px ; color: white;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iste dolorem
+                                    praesentium eum
+                                    provident cupiditate.
+                                    corporis distinctio sed. Id, praesentium aliquam.</p>
+                            </div>
+                        </div>
+                        <div class="card-blog me-0 position-relative p-0  mt-3 mb-3" style="width: calc(95% / 4);">
+                            <div>
+                                <img src="images/man.png" alt="img man" style="max-width: 100%;">
+                            </div>
+                            <div class="text-parent p-3 pt-2"
+                                style="background-color: #393939; border-radius: 0 0 20px 20px; ">
+                                <div class="d-flex  justify-content-between align-items-center text-white"
+                                    style="max-width: 80%;">
+                                    <p style="font-size: 12px; font-weight: bolder;"><i
+                                            class="me-1 fa-solid fa-user-check"></i> Team Admin</p>
+                                    <p style="font-size: 12px; font-weight: bolder;"><i
+                                            class="me-1 fa-solid fa-clock"></i> Jan 20,2019</p>
+                                </div>
+                                <p
+                                    style="color: #f4782e; margin: 15px 0 !important; font-size: 14px; font-weight: bolder;">
+                                    How to Grow
+                                    Epiphytic Tropical Plants and Trees</p>
+                                <p style="font-size:11px ; color: white;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iste dolorem
+                                    praesentium eum
+                                    provident cupiditate.
+                                    corporis distinctio sed. Id, praesentium aliquam.</p>
+                            </div>
+                        </div>
+                        <div class="card-blog me-0 position-relative p-0  mt-3 mb-3" style="width: calc(95% / 4);">
+                            <div>
+                                <img src="images/swiper-four.png" alt="img man" style="max-width: 100%;">
+                            </div>
+                            <div class="text-parent p-3 pt-2"
+                                style="background-color: #393939; border-radius: 0 0 20px 20px; ">
+                                <div class="d-flex  justify-content-between align-items-center text-white"
+                                    style="max-width: 80%;">
+                                    <p style="font-size: 12px; font-weight: bolder;"><i
+                                            class="me-1 fa-solid fa-user-check"></i> Team Admin</p>
+                                    <p style="font-size: 12px; font-weight: bolder;"><i
+                                            class="me-1 fa-solid fa-clock"></i> Jan 20,2019</p>
+                                </div>
+                                <p
+                                    style="color: #f4782e; margin: 15px 0 !important; font-size: 14px; font-weight: bolder;">
+                                    How to Grow
+                                    Epiphytic Tropical Plants and Trees</p>
+                                <p style="font-size:11px ; color: white;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Iste dolorem
+                                    praesentium eum
+                                    provident cupiditate.
+                                    corporis distinctio sed. Id, praesentium aliquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer class="p-3 text-center position-relative text-white fw-bolder"
+            style="box-shadow: 10px 10px 10px 10px #777;">
+            <p style="position: relative; z-index: 11;">&copy; <span class="year"></span> copyright <span
+                    style="color: #f4782e;">ProNabowy</span> all right reserved</p>
+        </footer>
+        <script src="js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </body>
+
+</html>
