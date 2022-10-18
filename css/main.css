@@ -336,6 +336,11 @@ section.landing .container .wrapper {
 
 
 @media (max-width:768px) {
+    .landing-page {
+            left: 50%;
+            top: 70% !important;
+            transform: translate(-50%, -70%) !important;
+        }
     section.games .vip-card .image img {
         display: none;
     }
